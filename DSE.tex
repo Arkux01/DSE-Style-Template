@@ -41,10 +41,21 @@
 \renewcommand{\subpartlabel}{(\thesubpart)}
 \renewcommand{\subsubpartlabel}{(\thesubsubpart)}
 
-\renewcommand\questionshook{\setlength{\labelsep}{0.6cm}}
-\renewcommand\partshook{\setlength{\labelsep}{0.75cm}}
-\renewcommand\subpartshook{\renewcommand\makelabel[1]{##1\hfil }}
-\renewcommand\subsubpartshook{\setlength{\labelsep}{0.4cm}}
+\renewcommand\questionshook{
+    \setlength{\labelsep}{16pt}
+    \setlength{\leftmargin}{16pt}
+}
+\renewcommand\partshook{
+    \setlength{\labelsep}{22pt}
+    \setlength{\leftmargin}{34pt}
+}
+\renewcommand\subpartshook{
+    \renewcommand\makelabel[1]{##1\hfil }
+    \setlength{\labelwidth}{\labelsep}
+    \setlength{\labelsep}{12pt}
+    \setlength{\leftmargin}{34pt}
+}
+%\renewcommand\subsubpartshook{\setlength{\labelsep}{0.4cm}}
 
 \pointsdroppedatright
 \marksnotpoints
